@@ -85,7 +85,7 @@ The `main` (or `master`) branch should contain your comprehensive, general-purpo
 
 ### 2. Creating Variants
 For specific roles, create a new branch from `main`. Recommended branch naming convention:
-- `software-engineer`
+- `software-engineer` (see the [software-engineer example branch](https://github.com/rohitpadmanabhan/latex-resume-template/tree/software-engineer) showing a tailored resume for a Front-End React engineer)
 - `data-scientist`
 - `leadership`
 
