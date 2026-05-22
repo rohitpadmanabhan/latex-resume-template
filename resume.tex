@@ -1,0 +1,50 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% Formatting for ATS
+\pagestyle{empty} % No page numbers
+\raggedright % Left align
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Custom commands for experience/projects
+\newcommand{\experienceitem}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4} \vspace{2pt}
+}
+
+\newcommand{\projectitem}[2]{
+    \textbf{#1} \hfill #2 \vspace{2pt}
+}
+
+\newcommand{\educationitem}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4} \vspace{2pt}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{Rohit Padmanabhan}} \\ \vspace{4pt}
+    Bangalore, India \textbar{} +91-9677219013 \textbar{} padmanabhan.rohit@gmail.com \\
+    \href{https://www.linkedin.com/in/rohitpadmanabhan/}{linkedin.com/in/rohitpadmanabhan}
+\end{center}
+
+\vspace{8pt}
+
+\input{sections/summary.tex}
+\input{sections/skills.tex}
+\input{sections/highlights.tex}
+\input{sections/experience.tex}
+\input{sections/education.tex}
+\input{sections/certifications.tex}
+\input{sections/additional.tex}
+
+\end{document}
