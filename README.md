@@ -10,7 +10,7 @@ A minimal, professional, single-column LaTeX resume template designed for maximu
 
 ## Setup Instructions
 
-1. **Clone the repository**:
+1. **Clone the repository**: Clone this repository to your local machine (refer to the official [GitHub Cloning a Repository Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) for details):
    ```bash
    git clone <your-repo-url>
    cd <your-repo-name>
@@ -39,6 +39,42 @@ A minimal, professional, single-column LaTeX resume template designed for maximu
    ```bash
    pdflatex -jobname=John_Doe_Resume resume.tex
    ```
+
+
+## Editing with AI Coding Assistants
+
+You can use AI coding assistants to quickly update, tailor, and compile your resume:
+
+### 1. Google Antigravity
+- **Getting Started**: Get it from the official [Antigravity website](https://antigravity.google).
+- **Instructions**:
+  1. Clone this repository to your local machine or GitHub (refer to [GitHub's Cloning a Repository Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) for instructions).
+  2. Open the folder in the Antigravity IDE.
+  3. Prompt the agent in plain text or attach an existing PDF/document containing the details you want to import.
+
+### 2. Claude Code
+- **Getting Started**: Refer to the [Claude Code Quickstart Documentation](https://claude.ai/docs/quickstart). Install it globally using:
+  ```bash
+  npm install -g @anthropic-ai/claude-code
+  # Or via Homebrew on macOS/Linux:
+  brew install --cask claude-code
+  ```
+- **Instructions**:
+  1. Clone the repository and navigate into the folder (refer to [GitHub's Cloning a Repository Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) for instructions).
+  2. Run the `claude` command in your terminal.
+  3. Prompt Claude in plain text to modify, test, or compile your LaTeX files.
+
+### 3. GitHub Copilot
+- **Getting Started**: Enable it inside your preferred editor (VS Code, Cursor, JetBrains) by following the [GitHub Copilot Quickstart](https://github.com/features/copilot).
+- **Instructions**:
+  1. Clone the repository and open it in your IDE (refer to [GitHub's Cloning a Repository Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) for instructions).
+  2. Open the Copilot Chat panel or use the inline chat feature (`Ctrl+I` / `Cmd+I`).
+  3. Reference the relevant section files (e.g., `sections/experience.tex`) and ask Copilot to make the edits.
+
+---
+
+### Sample Prompt (Works for all assistants)
+> "I want to update my resume with my new job. Please edit the experience section file to add a new job: Senior Software Engineer at Google from May 2026 to Present. Key achievements: Led a team of 4 to optimize search latency by 15%, and migrated our main API gateway to Go. Also, please add Go and Kubernetes to my skills list."
 
 ## Versioning Workflow
 
