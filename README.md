@@ -16,15 +16,28 @@ A minimal, professional, single-column LaTeX resume template designed for maximu
    cd <your-repo-name>
    ```
 
-2. **Local Build (Optional)**:
-   To build the resume locally, you need a LaTeX distribution installed (e.g., TeX Live, MacTeX, or MiKTeX).
-   Run the following command in the root directory:
+2. **Install LaTeX (pdflatex)**:
+   To build the resume locally, you need a LaTeX distribution installed.
+   - **Mac**: We recommend installing MacTeX using Homebrew:
+     ```bash
+     brew install --cask mactex-no-gui
+     ```
+   - **Windows**: We recommend installing MiKTeX. Download the installer from the [MiKTeX website](https://miktex.org/download) and follow the setup instructions.
+
+3. **Local Build (Optional)**:
+   Run the following command in the root directory to generate `resume.pdf`:
    ```bash
    pdflatex resume.tex
    ```
    Alternatively, use `latexmk`:
    ```bash
    latexmk -pdf resume.tex
+   ```
+
+4. **Custom PDF Filename**:
+   If you'd like to output the PDF with a specific name (e.g., `John_Doe_Resume.pdf`), use the `-jobname` flag:
+   ```bash
+   pdflatex -jobname=John_Doe_Resume resume.tex
    ```
 
 ## Versioning Workflow
